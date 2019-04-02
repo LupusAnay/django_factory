@@ -28,7 +28,9 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['fast-citadel-50702.herokuapp.com', 'localhost:8001']
+ALLOWED_HOSTS = ['fast-citadel-50702.herokuapp.com',
+                 'localhost:8001',
+                 '127.0.0.1']
 
 # Application definition
 

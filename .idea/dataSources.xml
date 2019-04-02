@@ -7,5 +7,14 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/factory</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="factory@heroku" uuid="bda6418e-f666-40c2-a469-43f00cd24518">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-23-23-173-30.compute-1.amazonaws.com:5432/d4ab9cd7c61p1n</jdbc-url>
+      <driver-properties>
+        <property name="sslmode" value="require" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
