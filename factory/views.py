@@ -11,61 +11,71 @@ from factory.serializers import OrderSerializer, CustomerSerializer, \
 
 
 class Customers(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = CustomerSerializer
     queryset = Customer.objects.all()
 
 
 class CustomerInfo(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = CustomerSerializer
     queryset = Customer.objects.all()
 
 
 class Details(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = DetailSerializer
     queryset = Detail.objects.all()
 
 
 class DetailsInfo(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = DetailSerializer
     queryset = Detail.objects.all()
 
 
 class Orders(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = OrderSerializer
     queryset = Order.objects.all()
 
 
 class OrderInfo(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = OrderSerializer
     queryset = Order.objects.all()
 
 
 class Components(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = ComponentSerializer
     queryset = Component.objects.all()
 
 
 class ComponentInfo(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = ComponentSerializer
     queryset = Component.objects.all()
 
 
 class Providers(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = ProviderSerializer
     queryset = Provider.objects.all()
 
 
 class ProviderInfo(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated,
+                          permissions.DjangoModelPermissions)
     serializer_class = ProviderSerializer
     queryset = Provider.objects.all()
 

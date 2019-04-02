@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header = "Factory Database"
+admin.site.site_title = "Factory Database"
+admin.site.index_title = "Welcome to Factory Database"
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('factory.urls')),
+    path('', admin.site.urls),
+    path('api/', include('factory.urls')),
     path('api-auth/', include('rest_framework.urls')),
 ]

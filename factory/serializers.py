@@ -36,7 +36,7 @@ class DetailSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Detail
-        fields = ('id', 'name', 'price', 'cost', 'url', 'components')
+        fields = ('id', 'name', 'price', 'cost', 'components', 'url')
 
 
 class ProviderSerializer(serializers.ModelSerializer):
