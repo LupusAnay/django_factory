@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'factory.apps.FactoryConfig',
     'rest_framework',
+    'rangefilter',
 ]
 
 MIDDLEWARE = [
