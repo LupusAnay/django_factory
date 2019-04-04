@@ -52,5 +52,5 @@ class ProviderView(admin.ModelAdmin):
 admin.site.register(Customer, CustomerView)
 admin.site.register(Order, OrderView)
 admin.site.register(Detail, DetailView)
-admin.site.register(Component, CustomerView)
+admin.site.register(Component, ComponentView)
 admin.site.register(Provider, ProviderView)
